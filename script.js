@@ -1,5 +1,5 @@
 const askServer = async() => {
-    const response = await fetch('http://hp-api.herokuapp.com/api/characters');
+    const response = await fetch('https://hp-api.herokuapp.com/api/characters');
     const content = await response.json();
 
     const filtered = content.filter(item => item.image);
